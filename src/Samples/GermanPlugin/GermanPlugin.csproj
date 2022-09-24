@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GermanBaseStrategy.cs" />
+    <Compile Include="RsiStrategy.cs" />
     <Compile Include="GermanFinisher.cs" />
     <Compile Include="GermanStrategySettings.cs" />
     <Compile Include="GermanModule.cs" />

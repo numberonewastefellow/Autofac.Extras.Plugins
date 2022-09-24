@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnglishBaseStrategy.cs" />
+    <Compile Include="VwapStrategy.cs" />
     <Compile Include="EnglishStrategySettings.cs" />
     <Compile Include="EnglishModule.cs" />
     <Compile Include="EnglishSeparator.cs" />

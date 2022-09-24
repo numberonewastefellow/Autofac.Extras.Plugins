@@ -3,11 +3,11 @@ using System;
 
 namespace GermanPlugin
 {
-    public class GermanBaseStrategy : ABaseStrategy
+    public class RsiStrategy : ABaseStrategy
     {
-        public GermanBaseStrategy(IStrategySettings strategySettings, IWorld world, ISeparator separator, IFinisher finisher)
+        public RsiStrategy(IStrategySettings strategySettings, IWorld world, ISeparator separator, IFinisher finisher)
             : base(strategySettings, world, separator, finisher) {}
-        protected override string Language => "German";
+        protected override string Language => "RSI";
         public override bool Start()
         {
 

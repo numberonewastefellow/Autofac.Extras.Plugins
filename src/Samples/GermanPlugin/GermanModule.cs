@@ -9,7 +9,7 @@ namespace GermanPlugin
         const string Key = "GermanPlugin";
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<GermanBaseStrategy>().AsPlugin().Provide<IBaseStrategy>(Key);
+            builder.RegisterType<RsiStrategy>().AsPlugin().Provide<IBaseStrategy>(Key);
             builder.RegisterType<GermanStrategySettings>().AsPlugin().Provide<IStrategySettings>(Key);
             builder.RegisterType<GermanWorld>().AsPlugin().Provide<IWorld>(Key);
             builder.RegisterType<GermanSeparator>().AsPlugin().Provide<ISeparator>(Key);

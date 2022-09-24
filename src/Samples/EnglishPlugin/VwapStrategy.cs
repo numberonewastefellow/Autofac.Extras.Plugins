@@ -3,11 +3,11 @@ using CommonComponents;
 
 namespace EnglishPlugin
 {
-    public class EnglishBaseStrategy : ABaseStrategy
+    public class VwapStrategy : ABaseStrategy
     {
-        public EnglishBaseStrategy(IStrategySettings strategySettings, IWorld world, ISeparator separator, IFinisher finisher)
+        public VwapStrategy(IStrategySettings strategySettings, IWorld world, ISeparator separator, IFinisher finisher)
             : base(strategySettings, world, separator, finisher) {}
-        protected override string Language => "English";
+        protected override string Language => "VWAP";
         public override bool Start()
         {
             Console.WriteLine($"{Language} started..");
