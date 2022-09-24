@@ -2,7 +2,7 @@
 
 namespace EnglishPlugin
 {
-    public class EnglishHello : IHello
+    public class EnglishStrategySettings : IStrategySettings
     {
         public string Hello => "Hello";
     }

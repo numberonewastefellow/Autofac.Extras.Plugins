@@ -1,6 +1,6 @@
 ﻿namespace CommonComponents
 {
-    public interface IHello
+    public interface IStrategySettings
     {
         string Hello { get; }
     }

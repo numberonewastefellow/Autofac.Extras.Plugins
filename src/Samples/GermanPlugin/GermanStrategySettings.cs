@@ -2,7 +2,7 @@ using CommonComponents;
 
 namespace GermanPlugin
 {
-    public class GermanHello :IHello
+    public class GermanStrategySettings :IStrategySettings
     {
         public string Hello => "Hallo";
     }

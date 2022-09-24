@@ -31,8 +31,12 @@ namespace Net46Console
             builder.RegisterAssemblyModules(Assemblies.ToArray());
             var container = builder.Build();
 
-            var allHelloWorlds = container.Resolve<IEnumerable<IHelloWorld>>();
-            foreach (var helloWorld in allHelloWorlds) { log(helloWorld.Greeting); }
+            var allHelloWorlds = container.Resolve<IEnumerable<IBaseStrategy>>();
+            foreach (var helloWorld in allHelloWorlds)
+            {
+                 
+                log($"{helloWorld.Start()} => {helloWorld.StrategyName}");
+            }
 
             log("Press <Enter> to exit...");
             Console.ReadLine();

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CommonComponents</RootNamespace>
     <AssemblyName>CommonComponents</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -45,13 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AHelloWorld.cs" />
+    <Compile Include="ABaseStrategy.cs" />
     <Compile Include="CommonModule.cs" />
     <Compile Include="StandardFinisher.cs" />
     <Compile Include="IFinisher.cs" />
     <Compile Include="ISeparator.cs" />
-    <Compile Include="IHello.cs" />
-    <Compile Include="IHelloWorld.cs" />
+    <Compile Include="IStrategySettings.cs" />
+    <Compile Include="IBaseStrategy.cs" />
     <Compile Include="IWorld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,9 +59,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Autofac.Extras.Plugins\Autofac.Extras.Plugins.csproj">
-      <Project>{74487cca-b449-4f02-ba14-04245f6249ba}</Project>
-      <Name>Autofac.Extras.Plugins</Name>
+    <ProjectReference Include="..\..\..\AutofacePluginNet\AutofacePluginNet.csproj">
+      <Project>{533091e0-952f-4357-b581-f200a75107d1}</Project>
+      <Name>AutofacePluginNet</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

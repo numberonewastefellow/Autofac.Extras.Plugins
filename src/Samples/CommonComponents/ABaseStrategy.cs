@@ -1,24 +1,27 @@
 ﻿namespace CommonComponents
 {
-    public abstract class AHelloWorld : IHelloWorld
+    public abstract class ABaseStrategy : IBaseStrategy
     {
         readonly IFinisher mFinisher;
-        readonly IHello mHello;
+        readonly IStrategySettings _mStrategySettings;
         readonly ISeparator mSeparator;
         readonly IWorld mWorld;
-        protected AHelloWorld(IHello hello, IWorld world, ISeparator separator, IFinisher finisher)
+        protected ABaseStrategy(IStrategySettings strategySettings, IWorld world, ISeparator separator, IFinisher finisher)
         {
-            mHello = hello;
+            _mStrategySettings = strategySettings;
             mWorld = world;
             mSeparator = separator;
             mFinisher = finisher;
         }
         protected abstract string Language { get; }
-        public string Greeting
+
+        public abstract bool Start();
+        
+        public string StrategyName
         {
             get
             {
-                var parts = new[] {mHello.Hello, mWorld.World};
+                var parts = new[] {_mStrategySettings.Hello, mWorld.World};
                 var greeting = mFinisher.Beautify(mSeparator.Separate(parts));
                 return $"In {Language} the greeting looks like this:\r\n{greeting}";
             }
