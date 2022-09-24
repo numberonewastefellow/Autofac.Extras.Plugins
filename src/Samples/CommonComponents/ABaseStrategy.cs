@@ -23,7 +23,7 @@
             {
                 var parts = new[] {_mStrategySettings.Hello, mWorld.World};
                 var greeting = mFinisher.Beautify(mSeparator.Separate(parts));
-                return $"In {Language} the greeting looks like this:\r\n{greeting}";
+                return $"In {Language} the strategy :\r\n{greeting}";
             }
         }
     }
