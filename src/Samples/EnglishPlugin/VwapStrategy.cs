@@ -7,10 +7,10 @@ namespace EnglishPlugin
     {
         public VwapStrategy(IStrategySettings strategySettings, IWorld world, ISeparator separator, IFinisher finisher)
             : base(strategySettings, world, separator, finisher) {}
-        protected override string Language => "VWAP";
+        protected override string StrategyName => "VWAP";
         public override bool Start()
         {
-            Console.WriteLine($"{Language} started..");
+            Console.WriteLine($"{StrategyName} started..");
             return true;
         }
     }

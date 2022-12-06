@@ -84,7 +84,7 @@ namespace Net46Console
             foreach (var helloWorld in allHelloWorlds)
             {
                  
-                log($"{helloWorld.Start()} => {helloWorld.StrategyName}");
+                log($"{helloWorld.Start()} => {helloWorld.GetStrategyName}");
             }
 
             log("Press <Enter> to exit...");

@@ -2,7 +2,7 @@
 {
     public interface IBaseStrategy
     {
-        string StrategyName { get; }
+        string GetStrategyName { get; }
         bool Start();
     }
 }

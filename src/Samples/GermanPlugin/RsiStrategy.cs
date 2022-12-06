@@ -7,11 +7,11 @@ namespace GermanPlugin
     {
         public RsiStrategy(IStrategySettings strategySettings, IWorld world, ISeparator separator, IFinisher finisher)
             : base(strategySettings, world, separator, finisher) {}
-        protected override string Language => "RSI";
+        protected override string StrategyName => "RSI";
         public override bool Start()
         {
 
-            Console.WriteLine($"{Language} started..");
+            Console.WriteLine($"{StrategyName} started..");
             return true;
         }
     }

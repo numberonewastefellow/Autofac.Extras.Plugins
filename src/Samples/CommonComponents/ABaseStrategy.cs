@@ -13,17 +13,17 @@
             mSeparator = separator;
             mFinisher = finisher;
         }
-        protected abstract string Language { get; }
+        protected abstract string StrategyName { get; }
 
         public abstract bool Start();
         
-        public string StrategyName
+        public string GetStrategyName
         {
             get
             {
                 var parts = new[] {_mStrategySettings.Hello, mWorld.World};
                 var greeting = mFinisher.Beautify(mSeparator.Separate(parts));
-                return $"In {Language} the strategy :\r\n{greeting}";
+                return $"In {StrategyName} the strategy :\r\n{greeting}";
             }
         }
     }
